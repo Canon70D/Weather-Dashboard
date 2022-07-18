@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    
+    <div class="main-container">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <h5>Search for a City:</h5>
+                <form>
+                    <input id="enterCity" type="text" placeholder="Enter a City">
+                    <button id="searchBtn">Search</button>
+                </form>
+                <form id="history"></form>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row" id="bigCard">
+                        <div class="display">
+                            <h3 id="cityName"></h3>
+                            <img id="cityWeatherPic">
+                            <p id="Temp"></p>
+                            <p id="Wind"></p>
+                            <p id="Humidity"></p>
+                            <p id="UV"></p>
+                        </div>
+                </div>
+
+                <h3>5-Day Forecast</h3>
+                
+                <div class="row" id="smallCard">
+                    <div class="col-md-2 forecast"></div>
+                    <div class="col-md-2 forecast"></div>
+                    <div class="col-md-2 forecast"></div>
+                    <div class="col-md-2 forecast"></div>
+                    <div class="col-md-2 forecast"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--.js links-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

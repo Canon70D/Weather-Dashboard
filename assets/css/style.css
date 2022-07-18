@@ -1,0 +1,72 @@
+header {
+    background-size: cover;
+    background-position-y: 40%;
+    color:white;
+    background-color:rgb(6, 21, 88);
+    text-align: center;
+}
+
+h5 {
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+form{
+    margin: 20px;
+}
+
+#searchBtn {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    border-color:  rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+    margin: 10px;
+}
+
+.d-block:hover {
+    cursor: pointer;
+}
+
+#bigCard {
+    margin-left: 20px;
+    border-color: black;
+    border-style: solid;
+    margin-right: 10%;
+}
+
+.display, #smallCard, h3 {
+    margin-left: 20px
+}
+
+#cityName {
+    font-size: 400%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.uv-low{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+.uv-mid{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+}
+
+.uv-high{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+.forecast {
+    background-color: rgb(0, 162, 255);
+    margin: 5px;
+    border-radius: 5%;
+    color: white;
+}
