@@ -71,18 +71,27 @@ function initPage() {
                             forecastDateEl.setAttribute("class", "mt-3 mb-0 forecast-date");
                             forecastDateEl.innerHTML = forecastMonth + "/" + forecastDay + "/" + forecastYear;
                             forecastEls[i].append(forecastDateEl);
+                            
+                            //console.log(response.data.list);
 
-                            // Icon for current weather
+                            //weather display
                             var forecastWeatherEl = document.createElement("img");
                             forecastWeatherEl.setAttribute("src", "https://openweathermap.org/img/wn/" + response.data.list[forecastIndex].weather[0].icon + "@2x.png");
                             forecastWeatherEl.setAttribute("alt", response.data.list[forecastIndex].weather[0].description);
                             forecastEls[i].append(forecastWeatherEl);
+                            //temp
                             var forecastTempEl = document.createElement("p");
                             forecastTempEl.innerHTML = "Temp: " + k2f(response.data.list[forecastIndex].main.temp) + " &#176F";
                             forecastEls[i].append(forecastTempEl);
+                            //wind speed
+                            var forecastWindEl = document.createElement("p");
+                            forecastWindEl.innerHTML = "Wind Speed: " + response.data.list[forecastIndex].wind.speed + " MPH";
+                            forecastEls[i].append(forecastWindEl);
+                            //humidity
                             var forecastHumidityEl = document.createElement("p");
                             forecastHumidityEl.innerHTML = "Humidity: " + response.data.list[forecastIndex].main.humidity + "%";
                             forecastEls[i].append(forecastHumidityEl);
+
                         }
                     })
             });
